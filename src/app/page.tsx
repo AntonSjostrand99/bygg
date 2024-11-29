@@ -1,14 +1,17 @@
 "use client";
-import Image from "next/image";
+
 import Navbar from "@/components/Navbar/Navbar";
 import Contact from "@/components/Contact/Contact";
 import WhoWeAre from "@/components/WhoWeAre/WhoWeAre";
 import Footer from "@/components/Footer/Footer";
-import Link from "next/link";
+import ScrollToTopButton from "@/components/ScrollToTopBtn/scrollToTopBtn";
+
 
 export default function Home() {
   return (
+  
     <div className="min-h-screen flex flex-col gap-auto ">
+       {/* <ScrollToTopButton/> */}
       <Navbar />
 
 
