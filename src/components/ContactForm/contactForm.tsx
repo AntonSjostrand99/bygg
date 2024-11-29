@@ -8,19 +8,17 @@ function ContactForm() {
     message: "",
   });
 
-  const handleChange = (e: { target: { name: any; value: any; }; }) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
       [name]: value,
     });
   };
-
-  const handleSubmit = (e: { preventDefault: () => void; }) => {
+  
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form data submitted:", formData);
-
-    // Rensa formuläret efter inskick
     setFormData({
       name: "",
       email: "",
