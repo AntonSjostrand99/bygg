@@ -1,5 +1,4 @@
 "use client";
-
 import Navbar from "@/components/Navbar/Navbar";
 import Contact from "@/components/Contact/Contact";
 import WhoWeAre from "@/components/WhoWeAre/WhoWeAre";

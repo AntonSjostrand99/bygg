@@ -84,7 +84,7 @@ function ContactForm() {
             onChange={handleChange}
             required
             placeholder="Skriv ditt meddelande"
-            rows="5"
+            rows={4} 
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-500"
           />
         </div>
